@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PrimaryController">
+   <children>
+      <Button layoutX="405.0" layoutY="348.0" mnemonicParsing="false" onAction="#goCrearJugador" text="CREAR JUGADOR" />
+      <Label layoutX="224.0" layoutY="310.0" />
+      <TextField layoutX="201.0" layoutY="196.0" />
+      <Label layoutX="46.0" layoutY="200.0" text="Introduzca su NICK" />
+      <Button layoutX="405.0" layoutY="196.0" mnemonicParsing="false" text="Entrar" />
+      <Label layoutX="148.0" layoutY="57.0" text="LA PISCISFACTORIA" textFill="#fd0c0c" AnchorPane.rightAnchor="147.2" AnchorPane.topAnchor="57.0">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="201.0" layoutY="352.0" text="Si no tienes un jugador todavía" />
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Conectar">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Administrar">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#goPerfilesCreados" text="Ver todos los perfiles creados" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acerda de">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
